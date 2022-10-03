@@ -2,9 +2,9 @@
 ## fall-22-mp1-work
 
 
-### Last Name:  
-### First Name: 
-### GitHub Username: 
+### Last Name:  Díaz
+### First Name: Sofia
+### GitHub Username: Sofia-elena
 
 ---
 #### General Workflow: 
