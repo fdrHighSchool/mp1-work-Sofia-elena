@@ -10,10 +10,17 @@ public class UserName {
     String firstName = s.nextLine();
     System.out.print("Enter your last name: ");
     String lastName = s.nextLine();
-
-    // test output
-    System.out.println("Hello " + initialize(firstName) + "." + initialize(lastName) + ".");
-
+    System.out.print("Enter your favorite number.");
+    String favNum = s.nextLine();
+    System.out.print("Are you a student or a teacher? Enter teacher or student to answer.");
+    String studentTeacher = s.nextLine();
+    if (studentTeacher.equals("teacher")){
+    System.out.println("Hello " + initialize(firstName) + lastName +favNum+"@schools.nyc.gov");
+    }
+    else{
+      System.out.println("Hello " + firstName + initialize(lastName) +favNum+"@nycstudents.net");  
+    }// test output
+     
     s.close();
   } // end main method
 
