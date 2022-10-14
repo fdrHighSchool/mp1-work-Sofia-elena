@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class UserName {
   public static void main(String[] args) {
     // create Scanner object
@@ -10,11 +9,11 @@ public class UserName {
     String firstName = s.nextLine();
     System.out.print("Enter your last name: ");
     String lastName = s.nextLine();
-    System.out.print("Enter your favorite number.");
+    System.out.print("Enter your favorite number:");
     String favNum = s.nextLine();
-    System.out.print("Are you a student or a teacher? Enter teacher or student to answer.");
+    System.out.print("Are you a teacher? Enter yes or no:");
     String studentTeacher = s.nextLine();
-    if (studentTeacher.equals("teacher")){
+    if (studentTeacher.equals("yes")){
     System.out.println("Hello " + initialize(firstName) + lastName +favNum+"@schools.nyc.gov");
     }
     else{
