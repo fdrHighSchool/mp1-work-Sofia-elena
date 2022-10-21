@@ -22,19 +22,26 @@ public class UserName {
     else{
       System.out.println("Hello " + firstName + initialize(lastName) +favNum+"@nycstudents.net");  
      }
-    createPassword(8);
+     System.out.println("How long would you like your password to be? Type the number:");
+     double length = s.nextDouble();
+    createPassword(length);
     s.close();
  }
-    public static String createPassword(int length){
-       for (int i = 0; i<length; i++);
-        String password="";
-       int capital= (char)(int)(Math.random()*(90-65+1)+ 65);
-       int lowercase= (char)(int)(Math.random()*(122-97+1)+ 97);
-       int special= (char)(int)(Math.random()*(47-33+1)+ 33);
-       char c = (char)(capital);
-       char l = (char)(lowercase);
-       char s = (char)(special);
-       System.out.println("Your password is "+capital+""+c+lowercase+""+l+special+""+s);
+    public static String createPassword(double length){
+       String password = "";
+       
+        for (double i = 0; i<(length/3); i++){
+           int capital= (char)(int)(Math.random()*(90-65+1)+ 65);
+           char c = (char)(capital);
+           password+= c;
+           int lowercase= (char)(int)(Math.random()*(122-97+1)+ 97);
+           char l = (char)(lowercase);
+           password+= l;
+           int special= (char)(int)(Math.random()*(47-33+1)+ 33);
+           char s = (char)(special);
+           password+= s;
+        }
+       System.out.println("Your password is " + password);
     //purpose: send back a random string of numbers, upper/lowercase letters//
     //convert to char = character c = (char)i;
     // add char to password string
